@@ -1,0 +1,10 @@
+@import '~components/_mixins/screens';
+
+@media (#{$phone}) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    width: 100% !important;
+  }
+}

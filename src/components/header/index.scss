@@ -1,0 +1,11 @@
+@import '~components/_mixins/screens';
+
+.header{
+  background: #000;
+  width: 100%;
+  z-index: 10;
+}
+
+@media (#{$desktop}) {
+
+}

@@ -1,0 +1,31 @@
+@import '~components/_mixins/transition';
+
+.menu{
+  
+  &__list{
+    display: flex;
+  }
+
+  &__item{
+    display: flex;
+  }
+
+  &__link{
+    align-self: center;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 16px;
+    padding: 0 15px;
+    @include transition(all);
+
+    &:hover{
+      background: rgba(255, 255, 255, 0.15);
+    }
+    &:active{
+      background: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+}

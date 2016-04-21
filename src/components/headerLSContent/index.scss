@@ -1,0 +1,24 @@
+@import '~components/_mixins/screens';
+
+.headerLSContent{
+
+  &__title{
+    color: #fff;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  &__caption{
+    width: 300px;
+    line-height: 1.4;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+
+}

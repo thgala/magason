@@ -1,0 +1,28 @@
+/* global styles */
+
+@import 'reset-css/reset.css';
+
+@import './fonts/index';
+@import './typography';
+@import './links';
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  font-family: 'Helvetica';
+
+  h1 {
+
+  }
+
+  h2 {
+    
+  }
+
+  img {
+    width: 100%;
+  }
+}
