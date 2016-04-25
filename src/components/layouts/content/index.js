@@ -6,7 +6,8 @@ import bem from 'react-bem-classes';
 
 
 @bem({
-  block: 'content'
+  block: 'content',
+  modifiers: ['long']
 })
 export default class Content extends Component {
   render() {

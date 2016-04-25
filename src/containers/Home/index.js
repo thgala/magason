@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import DocumentMeta from 'react-document-meta';
 
 /* components */
-// import TopImage from 'components/topImage';
+import TopImage from 'components/topImage';
+import ProductsList from 'components/products/list';
 
 const metaData = {
   title: 'Redux Easy Boilerplate',
@@ -21,6 +22,8 @@ export default class Home extends Component {
     return (
       <section>
         <DocumentMeta {...metaData} />
+        <TopImage />
+        <ProductsList />
       </section>
     );
   }

@@ -20,18 +20,7 @@ export default class Header extends Component {
   render() {
     return (
       <header className={this.block()}>
-        <Content>
-          <Row cols={[3, 3, 3]}>
-            <Col>
-              <HeaderLSContent />
-            </Col>
-            <Col>
-              <Logo />
-            </Col>
-            <Col />
-          </Row>
-        </Content>
-        <Menu plusContent />
+        
       </header>
     );
   }

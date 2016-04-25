@@ -34,22 +34,20 @@ export default class HeaderLSContent extends Component {
   render() {
     return (
       <section className={this.block()} ref="parallax">
-        <Content>
-          <LoadingOrderAnimation animation="fade-in"
-            speed={700}
-            wait={700}>
-            <h1 className={this.element('title')}>
-              Magason.
-            </h1>
-          </LoadingOrderAnimation>
-          <LoadingOrderAnimation animation="fade-in"
-            speed={1200}
-            wait={900}>
-            <div className={this.element('caption')}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-            </div>
-          </LoadingOrderAnimation>
-        </Content>
+        <LoadingOrderAnimation animation="fade-in"
+          speed={700}
+          wait={700}>
+          <h1 className={this.element('title')}>
+            Magason.
+          </h1>
+        </LoadingOrderAnimation>
+        <LoadingOrderAnimation animation="fade-in"
+          speed={1200}
+          wait={900}>
+          <div className={this.element('caption')}>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+          </div>
+        </LoadingOrderAnimation>
       </section>
     );
   }
