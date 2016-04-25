@@ -1,0 +1,1 @@
+export const TOP_IMAGE_BLOCK_HEIGHT_MINIMUM = 500;
