@@ -21,8 +21,7 @@ export default class ProductsList extends Component {
         lg: 4,
         md: 3,
         sm: 2,
-        xs: 2,
-        xss: 1
+        xs: 1
       }
     }
 

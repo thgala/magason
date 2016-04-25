@@ -43,4 +43,13 @@
     color: #333;
   }
 
+  &--topMenu &__list{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &--topMenu &__link{
+    color: #000;
+  }
+
 }

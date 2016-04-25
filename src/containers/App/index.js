@@ -6,15 +6,13 @@ import './styles/app.scss';
 /* application components */
 import Header from 'components/header';
 import Footer from 'components/footer';
+import TopMenu from 'components/topMenu';
 
 export default class App extends Component {
-  static propTypes = {
-    children: React.PropTypes.any,
-  };
-
   render() {
     return (
       <section>
+        <TopMenu />
         <Header />
         {this.props.children}
         <Footer />
