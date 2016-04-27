@@ -1,9 +1,14 @@
+import * as productsActions from 'actions/productsActions';
+
 import React, { Component } from 'react';
 import DocumentMeta from 'react-document-meta';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 
 /* components */
 import TopImage from 'components/topImage';
 import ProductsList from 'components/products/list';
+
 
 const metaData = {
   title: 'Redux Easy Boilerplate',
@@ -17,7 +22,19 @@ const metaData = {
   },
 };
 
+
+@connect(
+  null,
+  dispatch => ({
+    productsActions: bindActionCreators(productsActions, dispatch)
+  })
+)
 export default class Home extends Component {
+
+  componentWillMount(){
+    this.props.productsActions.getProducts()
+  }
+
   render() {
     return (
       <section>

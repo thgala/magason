@@ -1,8 +1,13 @@
+@import '~components/_mixins/transition';
+
 .topImage{
   position: relative;
   width: 100%;
   height: 500px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__background{
     position: absolute;
@@ -10,9 +15,54 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
-    background-image: url(images/neon-wall.jpg);
+    background-color: #fff;
+    background-image: url(images/IMG_3.jpg);
+    background-size: 100%;
     // background-repeat: no-repeat;
     background-position: 50%;
+    opacity: 0.5;
+  }
+
+  &__title{
+    text-align: center;
+    z-index: 1;
+    font-size: 180px;
+    letter-spacing: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+    // @include transitionCubicBezier(all 0.5s);
+
+    &:hover{
+      animation: neon 2.5s ease-in-out infinite alternate;
+    }
+  }
+
+  &__caption{
+    z-index: 1;
+    text-align: center;
+    align-self: center;
+    max-width: 600px;
+    padding: 0 15px;
+    width: 100%;
+    line-height: 1.2;
   }
 }
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 50px #fff, 0 0 40px #eee, 0 0 70px #eee, 0 0 80px #eee, 0 0 100px #eee, 0 0 150px #eee;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 20px #eee, 0 0 35px #eee, 0 0 40px #eee, 0 0 50px #eee, 0 0 75px #eee;
+  }
+}
+
+// @keyframes neonEx {
+//   from {
+//     text-shadow: 20px 20px 0 rgba(#000, 0.05), -20px -20px 0 rgba(#000, 0.05);
+//   }
+//   to {
+//     text-shadow: -20px -20px 0 rgba(#000, 0.05), 20px 20px 0 rgba(#000, 0.05);
+//   }
+// }

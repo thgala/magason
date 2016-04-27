@@ -12,18 +12,14 @@ import bem from 'react-bem-classes';
 export default class Button extends Component {
   render() {
 
-    const {link, out, target} = this.props
+    const {link, target} = this.props
 
     return !link?(
       <div className={this.block()}>
         {this.props.children}
       </div>
-    ):out?(
-      <a href={link} className={this.block()} target={target}>
-        {this.props.children}
-      </a>
     ):(
-      <Link to={link} className={this.block()} >
+      <Link to={link} className={this.block()} target={target}>
         {this.props.children}
       </Link>
     )

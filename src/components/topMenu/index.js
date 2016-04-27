@@ -1,6 +1,8 @@
 import './index.scss';
 
-import * as actions from 'actions/topMenu';
+import * as topMenuActions from 'actions/topMenu';
+import * as bodyActions from 'actions/bodyActions';
+import * as backgroundActions from 'actions/backgroundActions';
 
 import React, { Component } from 'react';
 import { Link } from 'react-router';
@@ -16,23 +18,45 @@ import Menu from 'components/menu';
     topMenu: state.topMenu
   }),
   dispatch => ({
-    actions: bindActionCreators(actions, dispatch)
+    topMenuActions: bindActionCreators(topMenuActions, dispatch),
+    bodyActions: bindActionCreators(bodyActions, dispatch),
+    backgroundActions: bindActionCreators(backgroundActions, dispatch)
   })
 )
 @bem({
   block: 'topMenu'
 })
 export default class TopMenu extends Component {
+
+  constructor(props){
+    super(props)
+    this.menuTrigger = this.menuTrigger.bind(this)
+  }
+
+  menuTrigger(){
+    const {
+        topMenuActions,
+        topMenu,
+        bodyActions,
+        backgroundActions,
+      } = this.props
+
+    topMenuActions.menuTrigger()
+    bodyActions.bodyOverflowTrigger()
+    backgroundActions.backdropTrigger()
+  }
+
   render() {
 
-    const { actions, topMenu } = this.props
+    const { topMenu } = this.props
 
     return (
       <div className={this.block({
         open: topMenu.isMenuOpen
       })}>
-        <div className={this.element('trigger')} onClick={actions.menuTrigger.bind(this, !topMenu.isMenuOpen)} />
+        <div className={this.element('trigger')} onClick={this.menuTrigger} />
         <div className={this.element('content')}>
+          <div className={this.element('triggerInContent')} onClick={this.menuTrigger} />
           <Menu topMenu />
         </div>
       </div>

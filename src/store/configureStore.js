@@ -3,6 +3,7 @@ import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';
 
 import * as reducers from '../reducers';
+import promise from '../middlewares/promise';
 
 export default function configureStore(initialState) {
   const logger = createLogger({
@@ -11,7 +12,7 @@ export default function configureStore(initialState) {
     process.env.NODE_ENV === `development`, // eslint-disable-line no-unused-vars
   });
 
-  const middleware = applyMiddleware(thunkMiddleware, logger);
+  const middleware = applyMiddleware(promise, logger);
 
   const store = middleware(createStore)(combineReducers(reducers), initialState);
 

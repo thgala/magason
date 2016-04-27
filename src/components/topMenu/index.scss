@@ -15,18 +15,36 @@
     cursor: pointer;
   }
 
+  &__triggerInContent{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 15;
+    background-color: grey;
+    cursor: pointer;
+    top: 0;
+    right: -50px;
+    opacity: 0;
+    @include transition(opacity); 
+  }
+
   &__content{
     position: fixed;
+    z-index: 20;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 270px;
     background-color: #fff;
-    transform: translate3d(-310px, 0, 0);
-    @include transitionFull(all 0.4s ease-out);
+    transform: translate3d(-280px, 0, 0);
+    @include transitionCubicBezier(all 0.5s);
   }
 
   &--open &__content{
     transform: translate3d(0, 0, 0);
+  }
+
+  &--open &__triggerInContent{
+    opacity: 1;
   }
 }

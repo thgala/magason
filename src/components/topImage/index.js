@@ -54,8 +54,15 @@ export default class TopImage extends Component {
     return (
       <div className={this.block()} style={styles}>
         <div className={this.element('background')} ref="parallax" />
+        <div className={this.element('title')}>
+          MAGASON.
+        </div>
         <Menu plusContent topImage />
       </div>
     );
   }
 }
+
+        // <div className={this.element('caption')}>
+        //   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        // </div>
