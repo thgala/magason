@@ -69,6 +69,7 @@
     "webpack-merge": "^0.7.3"
   },
   "dependencies": {
+    "axios": "^0.10.0",
     "jquery": "^2.2.0",
     "react": "^0.14.6",
     "react-bem-classes": "^1.0.3",

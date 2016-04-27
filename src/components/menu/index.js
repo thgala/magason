@@ -9,7 +9,7 @@ import Content from 'components/layouts/content';
 
 @bem({
   block: 'menu',
-  modifiers: ['plusContent', 'topImage', 'footer']
+  modifiers: ['plusContent', 'topImage', 'footer', 'topMenu']
 })
 export default class Menu extends Component {
   render() {

@@ -45,22 +45,23 @@ export default class Responsive extends Component {
       currentItemsInRow = 0,
       windowWidth = window.innerWidth
 
-    if(windowWidth > LG){
+    if(windowWidth >= LG){
       itemWidth = fullWidth/itemsInRow.lg
       currentItemsInRow = itemsInRow.lg
-    } else if(windowWidth > MD && windowWidth <= LG){
+    } else if(windowWidth >= MD && windowWidth < LG){
       itemWidth = fullWidth/itemsInRow.md
       currentItemsInRow = itemsInRow.md
-    } else if(windowWidth > SM && windowWidth <= MD){
+    } else if(windowWidth >= SM && windowWidth < MD){
       itemWidth = fullWidth/itemsInRow.sm
       currentItemsInRow = itemsInRow.sm
-    } else if(windowWidth > XS && windowWidth <= SM){
+    } else if(windowWidth < SM){
       itemWidth = fullWidth/itemsInRow.xs
       currentItemsInRow = itemsInRow.xs
-    } else if(windowWidth >= XSS && windowWidth <= XS){
-      itemWidth = fullWidth/itemsInRow.xss
-      currentItemsInRow = itemsInRow.xss
     }
+    // } else if(windowWidth >= XSS && windowWidth < XS){
+    //   itemWidth = fullWidth/itemsInRow.xss
+    //   currentItemsInRow = itemsInRow.xss
+    // }
 
     this.setState({
       itemWidth: itemWidth,
