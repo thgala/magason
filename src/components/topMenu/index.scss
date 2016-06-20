@@ -3,16 +3,16 @@
 .topMenu{
   position: absolute;
   z-index: 10;
-  top: 0;
-  left: 0;
+  top: 25px;
+  left: 25px;
 
   &__trigger{
-    position: absolute;
     width: 50px;
     height: 50px;
     z-index: 15;
-    background-color: red;
     cursor: pointer;
+    background: url(./images/bars.svg);
+    background-position: 0 50%;
   }
 
   &__triggerInContent{
@@ -25,7 +25,14 @@
     top: 0;
     right: -50px;
     opacity: 0;
+    background: url(./images/close.svg);
     @include transition(opacity); 
+  }
+
+  &__trigger, &__triggerInContent{
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
   &__content{
@@ -47,4 +54,34 @@
   &--open &__triggerInContent{
     opacity: 1;
   }
+
+  &__list{
+
+  }
+
+  &__link{
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 15px;
+
+    &--current{
+      background: rgb(169, 0, 255);
+      color: #fff;
+    }
+
+    &:hover{
+      background: #eee;
+    }
+
+    &:active{
+      background: #E0E0E0;
+    }
+    
+  }
+
+  &__menu{
+  }
 }
+
+@import './index.hd'

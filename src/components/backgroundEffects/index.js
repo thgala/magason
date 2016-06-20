@@ -24,6 +24,7 @@ export default class BackgroundEffects extends Component {
         <div className={this.element('backdrop', {
           active: background.isBackdropActive
         })} />
+        <div className={this.element('thinLine')} />
       </div>
     )
   }

@@ -57,7 +57,24 @@ export default class TopMenu extends Component {
         <div className={this.element('trigger')} onClick={this.menuTrigger} />
         <div className={this.element('content')}>
           <div className={this.element('triggerInContent')} onClick={this.menuTrigger} />
-          <Menu topMenu />
+          <ul className={this.element('list')}>
+            <li className={this.element('item')}>
+              <a href="" className={this.element('link')}>О компании</a>
+            </li>
+            <li className={this.element('item', {parent: true})}>
+              <a href="" className={this.element('link')}>Каталог</a>
+              <Menu topMenu className={this.element('menu')} />
+            </li>
+            <li className={this.element('item')}>
+              <a href="" className={this.element('link')}>Доставка</a>
+            </li>
+            <li className={this.element('item')}>
+              <a href="" className={this.element('link')}>Возврат</a>
+            </li>
+            <li className={this.element('item')}>
+              <a href="" className={this.element('link')}>Контакты</a>
+            </li>
+          </ul>
         </div>
       </div>
     );

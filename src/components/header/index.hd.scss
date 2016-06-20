@@ -1,0 +1,9 @@
+@import '~components/_mixins/screens';
+
+@media (#{$hd}) {
+  .header {
+    &__shoppingCart{
+      right: 0;
+    }
+  }
+}

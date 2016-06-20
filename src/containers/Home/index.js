@@ -39,7 +39,6 @@ export default class Home extends Component {
     return (
       <section>
         <DocumentMeta {...metaData} />
-        <TopImage />
         <ProductsList />
       </section>
     );

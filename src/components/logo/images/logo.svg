@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="211px" height="50px" viewBox="0 0 211 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 1 Copy + MAGASON Copy Copy Copy Copy Copy Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.0443578%" y1="0%" x2="50%" y2="150%" id="linearGradient-1">
+            <stop stop-color="#14126F" offset="0%"></stop>
+            <stop stop-color="#D18282" offset="54.2171556%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-2" cx="25.0501672" cy="25" rx="25.0501672" ry="25"></ellipse>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="desktop" sketch:type="MSArtboardGroup" transform="translate(-403.000000, -25.000000)">
+            <g id="Oval-1-Copy-+-MAGASON-Copy-Copy-Copy-Copy-Copy-Copy" sketch:type="MSLayerGroup" transform="translate(403.000000, 25.000000)">
+                <text id="MAGASON" sketch:type="MSTextLayer" font-family="Gill Sans" font-size="35.7122612" font-weight="bold" fill="#111111">
+                    <tspan x="8.23076923" y="38">MAGASON</tspan>
+                </text>
+                <g id="Oval-1-Copy-+-MAGASON-Copy">
+                    <mask id="mask-3" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="none" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <text id="MAGASON-Copy" sketch:type="MSTextLayer" mask="url(#mask-3)" font-family="Gill Sans" font-size="35.7122612" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="8.23076923" y="38">MAGASON</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -2,9 +2,6 @@
 
 .productsItem{
   width: auto;
-  height: 450px;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: center;
 
@@ -21,9 +18,14 @@
   &__background{
     width: 100%;
     height: 250px;
-    background-position: 50% 50%;
-    background-size: contain;
+    background-position: 50% 0;
+    background-size: cover;
     background-repeat: no-repeat;
+    @include transitionFull(all 1.3s ease);
+  }
+
+  &:hover &__background{
+    background-size: contain;
   }
 
   &__info{
@@ -48,32 +50,13 @@
   }
 
   &__brand{
-    text-align: center;
-    font-size: 24px;
-    line-height: 30px;
-    padding-bottom: 10px;
-    font-weight: bold;
-  }
-
-  &__name{
-    text-align: center;
     font-size: 14px;
-    line-height: 18px;
-    padding-bottom: 10px;
+    line-height: 20px;
   }
 
   &__price{
-    text-align: center;
-    font-size: 24px;
-    line-height: 30px;
-    padding-bottom: 15px;
-  }
-
-  &__buttons{
-    text-align: center;
-  }
-
-  &__button{
-    margin: 0 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
   }
 }

@@ -1,0 +1,7 @@
+@import '~components/_mixins/screens';
+
+@media (#{$hd}) {
+  .topMenu {
+    left: 0;
+  }
+}

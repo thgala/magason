@@ -4,6 +4,7 @@
   
   &__list{
     display: flex;
+    justify-content: center;
   }
 
   &__item{
@@ -50,6 +51,29 @@
 
   &--topMenu &__link{
     color: #000;
+    padding: 0 15px;
+    line-height: 50px;
+    height: 50px;
+    border-left: 15px solid blue;
+    display: block;
+    width: 100%;
+    transition: none;
+    // background: url(./images/bg.png);
+    // background-position: 50% 50%;
+
+    &:hover{
+      background: #F7F7F7;
+    }
+
+    &:active{
+      background: #E0E0E0;
+    }
+
+    &--current{
+      background: rgb(169, 0, 255);
+      color: #fff;
+    }
+
   }
 
 }

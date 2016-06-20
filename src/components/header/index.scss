@@ -1,11 +1,64 @@
 @import '~components/_mixins/screens';
+@import '~containers/App/styles/fonts/icons/FontConst';
 
 .header{
-  background: #000;
   width: 100%;
   z-index: 10;
+  background: #fff;
+
+  &__topRow{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__menuBackdrop{
+    background: url(./images/bg.png);
+    background-position: 50%;
+  }
+
+  &__shoppingCart{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    display: flex;
+    height: 50px;
+  }
+
+  &__shoppingCartInfo{
+    text-align: right;
+    padding-top: 10px;
+  }
+
+  &__shoppingCartQuantity{
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+  }
+
+  &__shoppingCartTotal{
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  &__shoppingCartIcon{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    cursor: pointer;
+
+    &:before{
+      @extend %fontIcons;
+      content: $font-Flaticon-shopping-cart;
+    }
+    
+  }
 }
 
-@media (#{$desktop}) {
-
-}
+@import './index.hd'

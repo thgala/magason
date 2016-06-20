@@ -1,3 +1,35 @@
 .productsList{
+  &__categoryInfo{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 15px 0;
+  }
 
+  &__subCategories{
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  &__subCategoriesItem{
+    line-height: 20px;
+    display: inline-block;
+    margin-right: 15px;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+
+    &:hover{
+      background: #eee;
+    }
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &--active{
+      background: #111 !important;
+      color: #fff !important;
+    }
+  }
 }

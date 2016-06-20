@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="994px" height="827px" viewBox="0 0 994 827" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00FF49" offset="0%"></stop>
+            <stop stop-color="#FF00C9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="desktop" sketch:type="MSArtboardGroup" stroke="url(#linearGradient-1)">
+            <path d="M201.098302,-77.4902257 C201.098302,-77.4902257 169.213936,-197.160937 123.028641,-3.18386162 C76.8433455,190.793213 17.9746878,1044.5076 192.286278,712.874043 C366.597868,381.240484 496.653085,139.871306 775.450069,238.580917 C1054.24705,337.290528 1011.96022,557.273833 940.150998,618.940264 C868.341776,680.606695 849.831131,719.181979 441.750488,789.742074 C33.6698439,860.302169 -4.92168109,812.466369 -72,780.37335" id="Path-7" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

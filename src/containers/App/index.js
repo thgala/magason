@@ -18,7 +18,6 @@ export default class App extends Component {
         <BodyEffects />
         <BackgroundEffects />
 
-        <TopMenu />
         <Header />
         {this.props.children}
         <Footer />

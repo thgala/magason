@@ -16,10 +16,10 @@ export default class Menu extends Component {
 
     const menuList =
       <ul className={this.element('list')}>
-        <li className={this.element('item')}><a href="" className={this.element('link')}>Главная</a></li>
-        <li className={this.element('item')}><a href="" className={this.element('link')}>Каталог</a></li>
-        <li className={this.element('item')}><a href="" className={this.element('link')}>Доставка</a></li>
-        <li className={this.element('item')}><a href="" className={this.element('link')}>Контакты</a></li>
+        <li className={this.element('item', {type: 'case'})}><a href="" className={this.element('link')}>Кейсы и чехлы</a></li>
+        <li className={this.element('item', {type: 'sticker'})}><a href="" className={this.element('link')}>Стикеры</a></li>
+        <li className={this.element('item', {type: 'int'})}><a href="" className={this.element('link')}>Предметы интерьера</a></li>
+        <li className={this.element('item', {type: 'decor'})}><a href="" className={this.element('link')}>Декор</a></li>
       </ul>
 
     return (
